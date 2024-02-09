@@ -457,7 +457,10 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   transition: background 0.5s ease;
-  position: relative;
+  bottom: 40px;
+  position: absolute;
+  right: 50%;
+  margin-right: -50px;
 }
 #heart:before,
 #heart:after {
@@ -717,7 +720,7 @@ h3 {
   height: 280px;
   width: auto;
   top: 160px;
-  left: 230px;
+  left: 190px;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -770,8 +773,10 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     transition: background 0.5s ease;
-    position: relative;
-    align-self: flex-end;
+    bottom: 40px;
+    position: absolute;
+    right: 50%;
+    margin-right: -25px;
   }
   #heart:before,
   #heart:after {
@@ -884,11 +889,119 @@ h3 {
     height: 140px;
     width: auto;
     top: 80px;
-    left: 115px;
+    left: 97px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
     z-index: 1;
   }
 
+  .envelope-wrapper {
+    width: 150px;
+  }
+
+  .container {
+    margin-top: 20vh;
+    height: 70%;
+    width: 100%;
+  }
+
+    .valentines {
+    top: 25px;
+    height: 150px;
+    width: 100%;
+  }
+
+  @keyframes up {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+
+  .envelope {
+    width: 150px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .envelope:before {
+    width: 106px;
+    height: 106px;
+    top: -52.5px;
+    left: 22px;
+    border-radius: 15px 0 0 0;
+  }
+
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    height: 85px;
+    box-shadow: -2.5px -2.5px 50px rgba(0, 0, 0, 0.4);
+  }
+
+  .card:before {
+    width: 120px;
+    height: 70px;
+    left: 6px;
+    top: 6px;
+  }
+
+  .front {
+    width: 150px;
+    border-right: 90px solid #f4978e;
+    border-top: 47.5px solid transparent;
+    border-bottom: 50px solid transparent;
+  }
+
+  .front-left {
+    border-left: 150px solid #f8ad9d;
+    border-top: 97.5px solid transparent;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+  }
+
+  .shadow {
+    width: 160px;
+    height: 12.5px;
+    z-index: -1;
+    margin-top: 1vh;
+  }
+
+  .text {
+    font-size: 14px;
+    margin-top: 1.25vh;
+    line-height: 12.5px;
+    width: 100%;
+  }
+
+
+  .heart {
+    height: 15px;
+    width: 15px;
+    margin-top: 50px;
+    grid-area: 1/1;
+  }
+
+  .heart:before,
+  .heart:after {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+  }
+
+  .heart:before {
+    top: -7.5px;
+  }
+
+  .heart:after {
+    left: 7.5px;
+  }
 }

@@ -141,6 +141,8 @@ $(document).ready(function () {
       timeline.play();
       $(this).addClass("active");
 
+      let viewpointWidth = window.screen.width;
+
       setTimeout(function() {   //calls click event after a certain time
         popupContainer.classList.remove('active');
         popupShadow.classList.remove('active');
@@ -152,8 +154,12 @@ $(document).ready(function () {
         audio.classList.remove('hidden');
         titleText.classList.remove('hidden');
         envelopeWrapper.classList.remove('hidden');
+        if (viewpointWidth <= 768) {
+          valentines.style.setProperty("height", "150px");
+        } else {
+          valentines.style.setProperty("height", "300px");
+        }
         container.style.setProperty("margin-top", "20vh");
-        valentines.style.setProperty("height", "300px");
         button.removeClass("active");
      }, 800);
     }
